@@ -1,2 +1,6 @@
 .env
 venv/
+*.log
+models.txt
+emails.db
+__pycache__/
