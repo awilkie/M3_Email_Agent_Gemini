@@ -46,7 +46,7 @@ import os
 load_dotenv()          # Load environment variables from .env
 client = ai.Client()   # Initialize AISuite client
 # Register the custom Gemini provider manually
-client.client.providers["gemini"] = GeminiProvider(api_key=os.getenv("GOOGLE_API_KEY"))
+client.providers["gemini"] = GeminiProvider(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 # ## 3. Simulated email service
